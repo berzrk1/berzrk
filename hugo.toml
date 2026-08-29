@@ -1,7 +1,86 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseurl = "https://example.com/"
+locale = "en-us"
+title = "MY BLOGG TITLE"
+theme = "terminal"
+defaultContentLanguage = "en"
+pagination.pagerSize = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 3
+  fullWidthTheme = false
+  centerTheme = true 
+  showLanguageSelector = true
 
 [caches]
-[caches.images]
-dir = ':cacheDir/images'
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[languages]
+  [languages.en]
+    label = "EN"
+    title = "berzrk | blog"
+    copyright = ""
+    weight = 1
+    [languages.en.params]
+      subtitle = "blog"
+      keywords = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      [languages.en.params.logo]
+        logoText = "Blog"
+        logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        pageRef = "/about"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "writeups"
+        name = "Writeups"
+        pageRef = "/writeups"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "programming"
+        name = "Programming"
+        pageRef = "/programming"
+        weight = 3
+
+  [languages.pt]
+    label = "PT-BR"
+    title = "berzrk | blog"
+    copyright = ""
+    weight = 2
+    [languages.pt.params]
+      subtitle = "blog"
+      keywords = ""
+      menuMore = "Mostrar mais"
+      readMore = "Ler mais"
+      readOtherPosts = "Ler outros posts"
+      [languages.pt.params.logo]
+        logoText = "Blog"
+        logoHomeLink = "/"
+
+    [languages.pt.menu]
+      [[languages.pt.menu.main]]
+        identifier = "about"
+        name = "Sobre"
+        pageRef = "/about"
+        weight = 1
+      [[languages.pt.menu.main]]
+        identifier = "writeups"
+        name = "Writeups"
+        pageRef = "/writeups"
+        weight = 2
+      [[languages.pt.menu.main]]
+        identifier = "programming"
+        name = "Programming"
+        pageRef = "/programming"
+        weight = 3
+

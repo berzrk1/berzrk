@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Writeups on berzrk | blog</title>
+		<link>http://localhost:1313/pt/writeups/</link>
+		<description>Recent content in Writeups on berzrk | blog</description>
+		<generator>Hugo</generator>
+		<language>pt</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/pt/writeups/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>IronHold (Hard)</title>
+				<link>http://localhost:1313/pt/writeups/tryhackme/ironhold/</link>
+				<pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/writeups/tryhackme/ironhold/</guid>
+				<description>&lt;h1 id=&#34;resumo&#34;&gt;Resumo&lt;/h1&gt;&#xA;&lt;p&gt;Recebemos o código-fonte da plataforma de gestão de presos IronHold e uma&#xA;instância em execução baseada nesse código. A plataforma é construída com&#xA;&lt;strong&gt;Java Spring Boot&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Começamos obtendo credenciais de login a partir de um &lt;strong&gt;endpoint público mal&#xA;configurado&lt;/strong&gt;. Com essas credenciais, podemos abusar de um UNION-Based&#xA;SQL Injection para ler um banco de dados que é inacessível de qualquer&#xA;outro lugar.&lt;/p&gt;&#xA;&lt;p&gt;Em seguida, podemos obter privilege escalation para &lt;strong&gt;warden&lt;/strong&gt; (privilégio mais alto)&#xA;abusando de um &lt;strong&gt;Insecure Design&lt;/strong&gt; no endpoint de update de perfil.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

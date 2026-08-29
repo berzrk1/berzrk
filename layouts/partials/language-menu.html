@@ -1,0 +1,20 @@
+{{- $page := . -}}
+<ul class="menu menu--desktop menu--language-selector">
+  <li class="menu__trigger">{{ .Language.Label }}&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      {{- range .Site.Home.AllTranslations }}
+        {{- $lang := .Language }}
+        {{- if ne $lang.Lang $page.Language.Lang }}
+          {{- /* Default target: the other language's home page */ -}}
+          {{- $target := .Permalink }}
+          {{- /* If the current page has a translation in that language, link to it instead */ -}}
+          {{- range $page.AllTranslations }}
+            {{- if eq .Language.Lang $lang.Lang }}{{ $target = .Permalink }}{{ end }}
+          {{- end }}
+          <li><a href="{{ $target }}">{{ $lang.Label }}</a></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </li>
+</ul>

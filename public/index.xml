@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>My New Hugo Project</title>
+		<title>berzrk | blog</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content on My New Hugo Project</description>
+		<description>Recent content on berzrk | blog</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
 		
+			<lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>IronHold (Hard)</title>
+				<link>http://localhost:1313/writeups/tryhackme/ironhold/</link>
+				<pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/writeups/tryhackme/ironhold/</guid>
+				<description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;&#xA;&lt;p&gt;We are provided with the source code for the IronHold inmate-management platform and&#xA;a running instance based on this code. The platform is built with &lt;strong&gt;Java Spring Boot&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;We start by getting credentials to login from a &lt;strong&gt;misconfigured public&#xA;endpoint&lt;/strong&gt;. With this credential, we can abuse an Union-based SQL&#xA;Injection to read a database that is inaccessible from anywhere else.&lt;/p&gt;&#xA;&lt;p&gt;We can then escalate our account to &lt;strong&gt;warden&lt;/strong&gt; (highest privilege) by abusing an&#xA;&lt;strong&gt;Insecure Design&lt;/strong&gt; in the update profile endpoint.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>C Projects</title>
+				<link>http://localhost:1313/programming/programming/</link>
+				<pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/programming/programming/</guid>
+				<description>&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;&#xA;&lt;h2 id=&#34;philips-hue-controller--http-client&#34;&gt;Philips Hue Controller + HTTP Client&lt;/h2&gt;&#xA;&lt;p&gt;This is an interesting project because it could have been easily two projects.&#xA;It includes a simple &lt;strong&gt;HTTP client&lt;/strong&gt; capable of &lt;code&gt;GET&lt;/code&gt; and &lt;code&gt;PUT&lt;/code&gt; requests,&#xA;and a client to interact with Philips Hue API.&lt;/p&gt;&#xA;&lt;p&gt;My focus on this project was to have no dependency, except for GnuTLS because the v2 API&#xA;required HTTPS.&lt;/p&gt;&#xA;&lt;p&gt;But the craft of HTTP requests and handling of responses and also the manipulation of JSON was&#xA;done in pure C. The hardest part was definitely handling &lt;strong&gt;chunked transfer&lt;/strong&gt; in HTTP/1.1.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About Me</title>
+				<link>http://localhost:1313/about/about/</link>
+				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/about/about/</guid>
+				<description>&lt;h1 id=&#34;hello&#34;&gt;Hello&lt;/h1&gt;&#xA;&lt;p&gt;My name is Bernardo&lt;/p&gt;&#xA;&lt;p&gt;Currently I am pursuing the CPTS certification while I improve my CTF skills.&lt;/p&gt;&#xA;&lt;p&gt;I enjoy a lot low-level programming and reverse engineering.&lt;/p&gt;&#xA;&lt;p&gt;I am also a Linux daily driver enjoyer (with Arch Linux obviously).&lt;/p&gt;&#xA;&lt;h3 id=&#34;skills&#34;&gt;Skills&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Programming Languages&lt;/strong&gt;: C, C++, Python, Bash, PowerShell&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Blue Team&lt;/strong&gt;: Splunk, ELK Stack, WireShark, Log Analysis&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cloud&lt;/strong&gt;: AWS&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;IT&lt;/strong&gt;: Linux, Docker&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Certifications&lt;/strong&gt;: Sec+, CPTS (Preparing)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;socials&#34;&gt;Socials&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://linkedin.com/in/berzrk&#34; class=&#34;button inline&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/berzrk1/Philips-HUE-in-C&#34; class=&#34;button inline&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Title</title>
+				<link>http://localhost:1313/posts/post-2/</link>
+				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/post-2/</guid>
+				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. &lt;strong&gt;Donec quis dolor nec nunc mollis interdum vel in purus&lt;/strong&gt;. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/writeups/about/</link>
+				<pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/writeups/about/</guid>
+				<description>&lt;h1 id=&#34;hi-there&#34;&gt;Hi there&lt;/h1&gt;&#xA;&lt;p&gt;My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.&lt;/p&gt;&#xA;&lt;p&gt;We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.&lt;/p&gt;&#xA;&lt;p&gt;This theme is pretty basic and covers all of the essentials. All you have to do is start typing!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hello Friend</title>
+				<link>http://localhost:1313/posts/hello/</link>
+				<pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hello/</guid>
+				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. &lt;strong&gt;Donec quis dolor nec nunc mollis interdum vel in purus&lt;/strong&gt;. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>
