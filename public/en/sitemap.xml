@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -14,6 +14,12 @@
                 hreflang="pt"
                 href="http://localhost:1313/pt/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/posts/hello/</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writeups/tryhackme/ironhold/</loc>
     <lastmod>2026-08-29T00:00:00+00:00</lastmod>
@@ -41,11 +47,31 @@
                 href="http://localhost:1313/pt/writeups/"
                 />
   </url><url>
-    <loc>http://localhost:1313/programming/programming/</loc>
+    <loc>http://localhost:1313/programming/c-projects/</loc>
     <lastmod>2026-08-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/programming/c-projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/programming/c-projects/"
+                />
   </url><url>
     <loc>http://localhost:1313/programming/</loc>
     <lastmod>2026-08-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/programming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/programming/"
+                />
   </url><url>
     <loc>http://localhost:1313/about/about/</loc>
     <lastmod>2026-08-27T00:00:00+00:00</lastmod>
@@ -73,17 +99,44 @@
                 href="http://localhost:1313/pt/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-08-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/writeups/tryhackme/volt_typhoon/</loc>
+    <lastmod>2026-08-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/writeups/tryhackme/volt_typhoon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/writeups/tryhackme/volt_typhoon/"
+                />
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
-    <lastmod>2026-08-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/writeups/tryhackme/packedlight/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/writeups/tryhackme/packedlight/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/writeups/tryhackme/packedlight/"
+                />
   </url><url>
-    <loc>http://localhost:1313/writeups/about/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/hello/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/writeups/tryhackme/daily_bugle/</loc>
+    <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/writeups/tryhackme/daily_bugle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/writeups/tryhackme/daily_bugle/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link

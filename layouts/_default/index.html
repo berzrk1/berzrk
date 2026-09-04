@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{ if .Content }}
+    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+
+  {{/* Sections kept out of the "recent" feed (override with params.homeExcludeSections). */}}
+  {{ $excluded := default (slice "about") .Site.Params.homeExcludeSections }}
+  {{ $limit := default 5 .Site.Params.homeRecentCount }}
+
+  {{ $recent := where .Site.RegularPages "Section" "not in" $excluded }}
+  {{ $recent = first $limit ($recent.ByDate.Reverse) }}
+
+  {{ with $recent }}
+    <section class="recent">
+      <h2 class="recent__title">{{ i18n "recentPosts" | default "Recent posts" }}</h2>
+
+      <ul class="recent__list">
+        {{ range . }}
+          {{ $post := . }}
+          <li class="recent__item">
+            {{ with .Section }}
+              <span class="recent__section">[{{ . }}]</span>
+            {{ end }}
+            <a class="recent__link" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+            <span class="recent__dots" aria-hidden="true"></span>
+            {{ with .Date }}
+              <time class="recent__date" datetime="{{ .Format "2006-01-02" }}">
+                {{- partial "post-date" $post -}}
+              </time>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+{{ end }}
